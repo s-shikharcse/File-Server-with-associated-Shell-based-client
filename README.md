@@ -19,7 +19,7 @@ server.c - this contains a file server. The server forks off a new process for e
 
 client-shell.c - this contains implementation of a "shell" which executes several commands. following are the commands the shell can execute:
 
-All simple built-in commands of Linux (like ls, cat, echo) etc. are supported
+    All simple built-in commands of Linux (like ls, cat, echo) etc. are supported
 
 1.) server server-IP server-port: this command store the server IP and port details for future file downloads(references).
 
