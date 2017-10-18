@@ -8,16 +8,18 @@ Three executables are generated on doing Make:
 
 Information about the files included:
 
-get-one-file-sig.c - this contains implementation of a client that can download a file from server by sending the command: get <flname> to the server.  
+get-one-file-sig.c - this contains implementation of a client that can download a file from server by sending the command: get <flname> to the server. 
+    
     Note:directory of file should be relative to the directory of the server.
 
 server.c - this contains a file server. The server forks off a new process for each client request and so, the server can handle multiple requests concurrently. 
+    
     Note: to show the aspects of multi-process programming I have created a server that forks off a new process for each     
     incoming request but ideally the server should create a new thread. 
 
 client-shell.c - this contains implementation of a "shell" which executes several commands. following are the commands the shell can execute:
 
-**All simple built-in commands of Linux (like ls, cat, echo) etc. are supported
+All simple built-in commands of Linux (like ls, cat, echo) etc. are supported
 
 1.) server server-IP server-port: this command store the server IP and port details for future file downloads(references).
 
