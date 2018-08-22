@@ -1,5 +1,5 @@
 # File-Server-with-associated-Shell-based-client
-Contains a file server and shell based client that can download one file one file from the server.
+Created a file server with shell based client that can download one file from the server.
 
 Three executables are generated on doing Make:
 * get-one-file-sig - corresponding to get-one-file-sig.c
